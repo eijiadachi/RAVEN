@@ -1,0 +1,7 @@
+define weka.core.xml.*.* as compartment XML;
+define weka.core.koml.*.* as compartment KOML;
+define weka.gui.*.* as compartment GUI;
+define weka.core.persistence.*Facade.* as compartment FACADE;
+define java.io.*.* as compartment IO_API;
+KOML may only remap from java.lang.ClassNotFoundException to weka.exceptions.KOMLException, from java.lang.IllegalAccessException to weka.exceptions.KOMLException, from java.lang.IllegalAccessException to weka.exceptions.KOMLException, from java.lang.IllegalArgumentException to weka.exceptions.KOMLException, from java.lang.IllegalArgumentException to weka.exceptions.KOMLException, from java.lang.InstantiationException to weka.exceptions.KOMLException, from java.lang.NoSuchMethodException to weka.exceptions.KOMLException, from java.lang.SecurityException to weka.exceptions.KOMLException, from java.lang.reflect.InvocationTargetException to weka.exceptions.KOMLException, from java.lang.reflect.InvocationTargetException to weka.exceptions.KOMLException;
+XML may only rethrow weka.exceptions.XMLException;

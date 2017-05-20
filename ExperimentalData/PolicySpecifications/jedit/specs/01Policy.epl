@@ -1,0 +1,8 @@
+define org.gjt.sp.jedit.io.*.* as compartment VFS;
+define org.gjt.sp.jedit.bufferio.*.* as compartment BUFFER;
+define org.gjt.sp.jedit.xml.*.*, org.gjt.sp.util.*XML*.* as compartment XML;
+define org.gjt.sp.jedit.task.*.* as compartment TASK;
+define org.gjt.sp.jedit.syntax.*.* as compartment MODE;
+define org.gjt.sp.jedit.*Mode.*, org.gjt.sp.jedit.*Saver.*, org.gjt.sp.jedit.*Manager.*, org.gjt.sp.jedit.BufferHistory.* as compartment GUI;
+define org.gjt.sp.util.*.* as compartment UTILS;
+TASK may only handle org.gjt.sp.jedit.bufferio.BufferException, java.io.IOException;

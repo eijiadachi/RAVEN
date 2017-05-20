@@ -1,0 +1,5 @@
+define weka.core.xml.*.* as compartment XML;
+define weka.core.koml.*.* as compartment KOML;
+define weka.gui.*.* as compartment GUI;
+define weka.core.persistence.*Facade.* as compartment FACADE;
+define java.io.*.* as compartment IO_API;

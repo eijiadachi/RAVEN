@@ -1,0 +1,5 @@
+define net.sf.freecol.common.resources.*.* as compartment RESOURCE;
+define net.sf.freecol.common.sound.*.* as compartment SOUND;
+define net.sf.freecol.FreeCol, net.sf.freecol.client.FreeColClient, net.sf.freecol.client.control.*.*, net.sf.freecol.server.control.*.* as compartment CONTROL;
+define net.sf.freecol.common.io* as compartment XML;
+define net.sf.freecol.server.FreeColServer.* as compartment SERVER;

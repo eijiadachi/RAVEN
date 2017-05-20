@@ -1,0 +1,12 @@
+define org.gjt.sp.jedit.io.*.* as compartment VFS;
+define org.gjt.sp.jedit.bufferio.*.* as compartment BUFFER;
+define org.gjt.sp.jedit.xml.*.*, org.gjt.sp.util.*XML*.* as compartment XML;
+define org.gjt.sp.jedit.task.*.* as compartment TASK;
+define org.gjt.sp.jedit.syntax.*.* as compartment MODE;
+define org.gjt.sp.jedit.*Mode.*, org.gjt.sp.jedit.*Saver.*, org.gjt.sp.jedit.*Manager.*, org.gjt.sp.jedit.BufferHistory.* as compartment GUI;
+define org.gjt.sp.util.*.* as compartment UTILS;
+GUI may only handle org.gjt.sp.jedit.xml.XMLException, org.gjt.sp.jedit.syntax.SyntaxException;
+TASK may only handle org.gjt.sp.jedit.bufferio.BufferException, java.io.IOException;
+UTILS cannot handle java.io.IOException;
+only VFS may raise java.nio.charset.UnsupportedCharsetException, java.nio.charset.MalformedInputException;
+only XML may rethrow org.gjt.sp.jedit.xml.XMLException;
